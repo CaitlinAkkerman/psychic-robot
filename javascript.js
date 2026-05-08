@@ -56,17 +56,19 @@ function getComputerChoice() {
       document.getElementById("scissors").disabled = true;
     }
 
-    checkGameOver();
   }
   
   document.getElementById("rock").addEventListener("click", () => {
     playRound("rock", getComputerChoice());
+    checkGameOver();
   });
 
   document.getElementById("paper").addEventListener("click", () => {
     playRound("paper", getComputerChoice());
+    checkGameOver();
   });
 
   document.getElementById("scissors").addEventListener("click", () => {
     playRound("scissors", getComputerChoice());
+    checkGameOver();
   });
